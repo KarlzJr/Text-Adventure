@@ -9,70 +9,61 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Walking-Good.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Walking-Good" startnode="1" creator="Twine" creator-version="2.3.16" ifid="1374A326-50A1-472C-AF1E-6E320B7927A5" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="412,186" size="100,100">{
+<tw-storydata name="Walking-Good" startnode="1" creator="Twine" creator-version="2.3.16" ifid="1374A326-50A1-472C-AF1E-6E320B7927A5" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="1883,226" size="100,100">{
 (set: $call to false)
 (set: $bathroom to false)
 (set: $topic to false)
 (set: $folklore to false)
+(set: $no to false)
 }
 You are standing outside your lecture hall after a one and a half hour lecture anxiously waiting to go back to your apartment.
 
 In class a [[topic]] was touched apon and it really changes your out look on your walk.
 
-[[Start walking home.|walking home]]</tw-passagedata><tw-passagedata pid="2" name="walking home" tags="" position="412,336" size="100,100">Its dark, theres two ways at this time to get home
+[[Start walking home.|walking home]]</tw-passagedata><tw-passagedata pid="2" name="walking home" tags="" position="1883,376" size="100,100">Its dark, theres two ways at this time to get home
 &lt;!--giving the player options based on what they know from class--&gt;
 (if:$topic is false)[The[[ woods]] is my usual route to take. The reason is because of its beauty and noises. The[[ bus]] though at times could be faster I just don&#39;t like the wait nor the amount of people being crammed in one place.]
-(if:$topic is true)[The[[ bus]] tends to be late so must get there before it leaves especially with what was mentioned today in [[class|topic]].]</tw-passagedata><tw-passagedata pid="3" name=" bus" tags="" position="337,486" size="100,100">&lt;!-- going to add some circumstancials here if they really want to go on the buss and if they know about class --&gt;
+(if:$topic is true)[The[[ bus]] tends to be late so must get there before it leaves especially with what was mentioned today in [[class|topic]].]</tw-passagedata><tw-passagedata pid="3" name=" bus" tags="" position="1808,526" size="100,100">&lt;!-- going to add some circumstancials here if they really want to go on the buss and if they know about class --&gt;
 
 (if: $topic is false)[You arrived at the bus station, no one is there waiting for the bus so you go to check the times...
 Unfortunatly you were too late for the last bus of the night.]
 (if: $folklore is true)[You are waiting with everyone else at the bus stop, and you here people talking about the class today and mentioning how the folklore is true. That they know someone who got caught and survived.
 As the bus arrives you [[get on the bus]]]
-The one time it wasn&#39;t late...looks like you have to take the [[scenic route| woods]]</tw-passagedata><tw-passagedata pid="4" name=" woods" tags="" position="487,487" size="100,100">You start your walk home.
+The one time it wasn&#39;t late...looks like you have to take the [[scenic route| woods]]</tw-passagedata><tw-passagedata pid="4" name=" woods" tags="" position="1958,527" size="100,100">You start your walk home.
 
-There is two routes to get home from here. The [[the road| road]] or [[the bridge| bridge]]</tw-passagedata><tw-passagedata pid="5" name=" bridge" tags="" position="412,636" size="100,100">There is so much beauty on this path
+There is two routes to get home from here. The [[the road| road]] or [[the bridge|bridge]]</tw-passagedata><tw-passagedata pid="5" name="bridge" tags="" position="1883,676" size="100,100">There is so much beauty on this path
 
 The lamps illuminate the path and you can hear the surrounding nature is so calming in its own way.
 
-All of a sudden the beauty turns to anxiety as you hear crunching behind you.
-
-[[Turn around| turn]]
-[[Keep walking | ignore]]</tw-passagedata><tw-passagedata pid="6" name=" road" tags="" position="562,636" size="100,100">This way is so boring and bland. Looks like every road just illuminated by lamps and car headlights as they pass.
+All of a sudden the beauty turns to anxiety as you hear crunching from behind, you dont know whether to [[turn]] or to [[ignore]] it.</tw-passagedata><tw-passagedata pid="6" name=" road" tags="" position="2190,675" size="100,100">This way is so boring and bland. Looks like every road just illuminated by lamps and car headlights as they pass.
 
 Well now that you think about it only one car has passed...3 times.
 
-[[Maybe I should take a different way home | bridge]]
-[[It&#39;s nothing just my ideas getting the best of me | keep on road]]</tw-passagedata><tw-passagedata pid="7" name=" turn" tags="" position="337,786" size="100,100">(if:$call is true)[You leave the bathroom to see that your roommate is right. There is a turkey outside that door so you leave on your way home.]
+Maybe I should take a different way home like the [[bridge]] or I can [[keep on road]] for now.</tw-passagedata><tw-passagedata pid="7" name="turn" tags="" position="1935,877" size="100,100">(if:$call is true)[You leave the bathroom to see that your roommate is right. There is a turkey outside that door so you leave on your way home.]
 
 (if:$call is false)[As you turn you see a shawdow.. a rather small shawdow that belongs to an animal.
 
 The animal is just a turkey. You were scared for nothing.]
 
-[[//Head home//| home]]
-</tw-passagedata><tw-passagedata pid="8" name=" ignore" tags="" position="487,786" size="100,100">You unconsisly speed up
+[[//Head home//|home]]
+</tw-passagedata><tw-passagedata pid="8" name="ignore" tags="" position="2085,877" size="100,100">You unconsisly speed up
 
 The crunching doesn&#39;t seem to match your steps or go away.
 Your heart starts to race, you don&#39;t know what to do. You see a bathroom up ahead.
 
-[[Hide in the bathroom to calm down | bathroom]]
-[[Continue on, it&#39;s nothing it&#39;ll go away | continue on]]</tw-passagedata><tw-passagedata pid="9" name=" keep on road" tags="" position="607,786" size="100,100">The car passes 3 more times before you know for sure that it is not your imagination.
+[[Hide in the bathroom to calm down |bathroom]]
+[[Continue on, it&#39;s nothing it&#39;ll go away |continue on]]</tw-passagedata><tw-passagedata pid="9" name="keep on road" tags="" position="2205,877" size="100,100">The car passes 3 more times before you know for sure that it is not your imagination.
 
-You start to speed up your walking since you are so close to getting home, but then you realize.. they would know where you live..
-
-[[Go home | captured]]
-[[Switch paths | bridge]]</tw-passagedata><tw-passagedata pid="10" name=" bathroom" tags="" position="412,935" size="100,100">{
+You start to speed up your walking since you are so close to getting [[home|captured]], but then you realize.. they would know where you live..
+So you think again if it is a good idea to [[switch paths|bridge]] or to go [[home|captured]]. </tw-passagedata><tw-passagedata pid="10" name="bathroom" tags="" position="2010,1026" size="100,100">{
 (set: $bathroom to true)
 }
-You rush into the restroom and catch your breath. You have no clue what to do. Stay for a couple minutes or call your roomate, since your apartment is up the hill to meet you.
-
-[[Call roommate | call]]
-[[Stay a couple minutes |stay]] 
-[[Confront what is outside that door | captured]]</tw-passagedata><tw-passagedata pid="11" name=" continue on" tags="" position="562,936" size="100,100">You ignore the bathroom and just try to get home as fast as possible.
+You rush into the restroom and catch your breath. You have no clue what to do, [[stay]] for a couple minutes, [[call]] your roomate to have them meet you or to [[confront|captured]] whatever is outside.</tw-passagedata><tw-passagedata pid="11" name="continue on" tags="" position="2159,1027" size="100,100">You ignore the bathroom and just try to get home as fast as possible.
 
 You are too scared to turn and face whatever is chasing you.
 
 Right up the hill is your apartment
-[[Go home | captured]]</tw-passagedata><tw-passagedata pid="12" name=" home" tags="" position="292,936" size="100,100">(if:$call is false)[You have safely arrived home to see that your roommate is cooking up a nice dinner for the both of you.
+[[Go home |captured]]</tw-passagedata><tw-passagedata pid="12" name="home" tags="" position="1890,1027" size="100,100">(if:$call is false)[You have safely arrived home to see that your roommate is cooking up a nice dinner for the both of you.
 
 At dinner you tell your roommate about the eventful walk home and you both laugh at it.]
 
@@ -80,7 +71,7 @@ At dinner you tell your roommate about the eventful walk home and you both laugh
 
 Wanted you to not be scared to walk home bt yourself.]
 
-//The End//</tw-passagedata><tw-passagedata pid="13" name=" captured" tags="" position="682,936" size="100,100">(if: $bathroom is false)[You rush home and right before you get to open the door you get snatched.
+//The End//</tw-passagedata><tw-passagedata pid="13" name="captured" tags="" position="2280,1027" size="100,100">(if: $bathroom is false)[You rush home and right before you get to open the door you get snatched.
 
 The car was following you since you left class.]
 
@@ -88,34 +79,73 @@ The car was following you since you left class.]
 
 Unfortunatly you have been kidnapped.
 
-//The End//</tw-passagedata><tw-passagedata pid="14" name=" call" tags="" position="262,1086" size="100,100">{
+//The End//</tw-passagedata><tw-passagedata pid="14" name="call" tags="" position="2053,1193" size="100,100">{
 (set: $call to false)
 }
 Your roomate does not answer your call.
 
 You check the time... it is 8:30 pm, they probably are asleep or have their phone off to do homework.
 
-[[Call again | call again]]
-[[Confront| captured]]</tw-passagedata><tw-passagedata pid="15" name="stay" tags="" position="412,1086" size="100,100">A few minutes have passed it&#39;s almost 8:50. It&#39;s getting late you can&#39;t really stay here forever.
+You debate whether to [[call again]] or to [[confront|captured]] what is outside.</tw-passagedata><tw-passagedata pid="15" name="stay" tags="" position="2204,1193" size="100,100">A few minutes have passed it&#39;s almost 8:50. It&#39;s getting late you can&#39;t really stay here forever.
 
-[[Confront | captured]]</tw-passagedata><tw-passagedata pid="16" name=" call again" tags="" position="262,1236" size="100,100">{
+[[Leave |captured]]</tw-passagedata><tw-passagedata pid="16" name="call again" tags="" position="1932,1317" size="100,100">{
 (set: $call to true)
 }
 Your roomate finally answers and says:
 
 &quot;Don&#39;t be a big baby, go outside and check, I doubt that it&#39;s anything dangerous. Probably a turkey.&quot;
 
-[[Confront | turn]]</tw-passagedata><tw-passagedata pid="17" name="topic" tags="" position="532,336" size="100,100">{
+[[Confront |turn]]</tw-passagedata><tw-passagedata pid="17" name="topic" tags="" position="2040,307" size="100,100">{
 (set: $topic to true)
 }
 The professor is an alumni from the school and now loves to teach and reminisc on the olden days on campus.
 
 They mention that there was a time on campus that there were disappearences on this campus that made many scared to walk alone at night. 
 
-You listened to every word they said about the [[folklore]] of the woods even though you had to [[walk|walking home]] alone after this late night class.</tw-passagedata><tw-passagedata pid="18" name="folklore" tags="" position="607,486" size="100,100">(Insert some folklore here)
+You listened to every word they said about the [[folklore]] of the woods even though you had to [[walk|walking home]] alone after this late night class.</tw-passagedata><tw-passagedata pid="18" name="folklore" tags="" position="2077,526" size="100,100">(Insert some folklore here)
 (set: $folklore to true)
+(if: $iPad is true)[[[Finished reading|iPad]]]
+[[Start walking home.|walking home]]</tw-passagedata><tw-passagedata pid="19" name="get on the bus" tags="" position="1763,676" size="100,100">As you get on the bus you purposely sit near the individuals that are talking about the missing person who escaped (insert folklore monster).
 
-[[Start walking home.|walking home]]</tw-passagedata><tw-passagedata pid="19" name="get on the bus" tags="" position="292,636" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+This is outstanding from your knowlage that was impossible.
+
+&quot;Should I [[talk]] to them or [[no]]?&quot;</tw-passagedata><tw-passagedata pid="20" name="talk" tags="" position="1633,922" size="100,100">(Make a yes circumtances)</tw-passagedata><tw-passagedata pid="21" name="no" tags="" position="1404,621" size="100,100">{
+(set: $no to true)
+}
+&quot;Yeah I should keep to myself and not bud into others conversations&quot;
+
+You are about 5 bus stops from the one nearest your apartment. You have on you your [[iPad]] [[phone]] and [[kindle]] what should you do to kill time?</tw-passagedata><tw-passagedata pid="22" name="iPad" tags="" position="1206,565" size="100,100">{(set: $iPad to true)}
+On your iPad you see that you left it on your notetaking app. This is convient as you should do some reviewing of your work.
+(if: $folklore is false)[Just try to avoid the notes on the [[folklore]] that you took during class]
+You can also start your class [[reading]] that is due 2 days from now. I is a lengthy piece covering Zubeks Framework.</tw-passagedata><tw-passagedata pid="23" name="phone" tags="" position="1338,739" size="100,100">You have many options on your phone to kill time. 
+You can answer your [[messages]] you have some unread messages. Aswell as [[social media]] and the [[internet]]</tw-passagedata><tw-passagedata pid="24" name="kindle" tags="" position="1212,675" size="100,100">You forgot to charge your kindle and it is now dead. You unfortunatly cannot read your Jujutsu Kaisen manga at this time.
+When you get home and get some work done your kindle should be charged enough for this action
+[[Back|no]]</tw-passagedata><tw-passagedata pid="25" name="reading" tags="" position="1066,548" size="100,100">(Add a piece from Zubeks Reading)
+
+[[Finished reading|Continue]]</tw-passagedata><tw-passagedata pid="26" name="messages" tags="" position="1147,821" size="100,100">You see that your mom texted you so you answer her that you are on your way home.
+[[Go back|phone]]</tw-passagedata><tw-passagedata pid="27" name="social media" tags="" position="1260,903" size="100,100">On social media you see that your roomate sent you a post about the school hosting a night party today in the woods followed by the message:
+&quot;Wanna go with me?&quot;
+[[Sure]] [[Nah not my scene]]</tw-passagedata><tw-passagedata pid="28" name="internet" tags="" position="1400,923" size="100,100">Wondering more about what the people around you are saying about the girl that was found alive and survived (the monster) you look it up.
+
+You see that what they are saying is true and that her name is [[Sasha]].
+
+While doing this you see more about (the monster) and you get scared and leave the [[internet|phone]].</tw-passagedata><tw-passagedata pid="29" name="Sasha" tags="" position="1263,1066" size="100,100">(enter information about someone)
+
+[[Go back|internet]]</tw-passagedata><tw-passagedata pid="30" name="Sure" tags="" position="1143,1053" size="100,100">{(set: $party to true)}
+You do not fear (the monster) because you believe that in group it will not attack you.
+[[Continue]] </tw-passagedata><tw-passagedata pid="31" name="Nah not my scene" tags="" position="1020,1022" size="100,100">{(set: $party to false)}
+With everything that was said tonight you said no. You&#39;re to scared to go in the woods at that time. Even with your friends.
+
+[[Continue]] </tw-passagedata><tw-passagedata pid="32" name="Continue" tags="" position="1183,1338" size="100,100">You get off at the bus stop by your apartment.
+
+(if: $no is true and $iPad is false and $party is false)[You have arrived home and can now sit down and relax in the safety of your own home.
+
+//The End//.](else-if: $party is false)[As you walk home you see shadows running around. You believe it is you imagination getting the best of you...
+You soon realize that its real, you are face to face with (monster)..
+
+..//The End//..]
+
+(if: $party is true)[[[party]]]</tw-passagedata><tw-passagedata pid="33" name="[party" tags="" position="919,1144" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
