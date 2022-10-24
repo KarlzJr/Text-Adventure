@@ -6,10 +6,7 @@ is based around walking alone. You *the character* just got out of a late night 
 your roomate is waiting for you...
 
 *How to Play*
-- Download the .HTML file
-- Right click
- - Open in...
- - Choose *Google Chrome*
+- Go to: https://karlzjr.github.io/Text-Adventure/Walking.html 
 
 *How to Restart*
 - Refresh the page and try the adventure again!
