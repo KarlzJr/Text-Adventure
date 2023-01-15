@@ -1,12 +1,10 @@
-# Text Adventure Game
+# Flowers
 
 ## About the game
-This game is made to bring awareness to walking home alone at night. It shows some dangers of what could happen and some anxiety that 
-is based around walking alone. You *the character* just got out of a late night class and have to get to your apartment safely where 
-your roomate is waiting for you...
+This game is made to bring peacefulness to the player. It shows some basic mechanics of collecting and using Twine to run if and else statements. You *the character* just woke up in a field of grass surrounded by glass… 
 
 *How to Play*
-- Go to: https://karlzjr.github.io/Text-Adventure/Walking.html 
+- Go to: https://karlzjr.github.io/Text-Adventure/_____.html 
 
 *How to Restart*
 - Refresh the page and try the adventure again!
