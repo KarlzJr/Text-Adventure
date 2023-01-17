@@ -14,3 +14,9 @@ body {
     font-style: normal;
     font-family: Geneva, Verdana, sans-serif
 }
+
+.playtesting {
+    border: double;
+    background-color: lightgrey;
+    text-align: center;
+}
