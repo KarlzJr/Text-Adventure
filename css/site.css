@@ -17,4 +17,16 @@ body {
 
 .intro {
     border: double;
+    background-color: lightgrey;
+    margin: auto;
+}
+
+.games {
+    border: double;
+    background-color: lightpink;
+}
+
+.howto {
+    border: double;
+    background-color: #dfe099;
 }
